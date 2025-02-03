@@ -101,6 +101,17 @@
             
         </table>
 
+        <canvas width="120" height="120">
+            Go Dodgers!
+        </canvas>
+        <script>
+            const canvas = document.querySelector("canvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "blue";
+            // Add a rectangle at (10, 10) with size 100x100 pixels
+            ctx.fillRect(10, 10, 100, 100);
+        </script>
+
         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ItkCXW0sJjXtHEq0" title="" frameBorder="0" width="560" height="315" title="YouTube video player"></iframe></p>
 
         <search>
@@ -112,7 +123,13 @@
         </search>
 
         <audio controls src="/media/wii-sports-home-run.mp3"></audio>
-        
+
+        <template id="statRow">
+            <tr>
+              <td class="record"></td>
+              <td></td>
+            </tr>
+          </template>
     </section>
 
 
