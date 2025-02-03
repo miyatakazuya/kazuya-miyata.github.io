@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects</title>
     <style>
-        
+      my-project {
+        display: block;
+        padding: 8px;
+        border-radius: 8px;
+        border: 2px black;
+        margin: 16px 0;
+        text-align: center;
+        width: 20vw;
+      }
     </style>
   </head>
 
@@ -18,6 +26,7 @@
           <li><a href="aboutme.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="experimenal.html">Experimental</a></li>
         </ul>
       </nav>
     </header>
@@ -26,14 +35,51 @@
 
     <section>
       <h2>Project 1: </h2>
-      
+      <noscript>
+      <figure>
+        <img src="../media/icons8-github.svg" alt="p1_pic">
+        <figcaption>My project at work</figcaption>
+      </figure>
 
+      <video controls>
+        <source src="../media/IMG_6367_compressed.mp4" type="video/mp4" />
+      </video>
+
+      </noscript>
       <p>
         Lorem inpusum Proj description
       </p>
 
+      <details>
+        <summary><i>More Details</i></summary>
+        
+        The pipeline takes in a <code>BBox[][]</code> and <code>cv Mat[]</code> 
+        which represents the image and telemtry of the plane. The program then converts the BBox into image-based coordinates,
+        performing transformations that allow the coordinate of the object to be calculated. 
+        <blockquote>The calculations were inspired by 
+          <cite><a href="http://www.movable-type.co.uk/scripts/latlong.html">the 'haversine' formula.</a></cite>
+        </blockquote>
+
+        <p>A <def>Pipeline</def> is a program that takes in un-processed images and outputs details based off the features in the image.</p>
+
+        Some Acronyms:  
+        <dl>
+          <dt>GSD</dt>
+          <dd>Ground Sampling Distance</dd>
+          <dt>OBC</dt>
+          <dd>Onboard Computer</dd>
+          <dt>GCS</dt>
+          <dd>Ground Control System</dd>
+        </dl>
+      </details>
+
       <aside>
-        <p>Skills Used: C++, Cmake, PyTorch, Docker</p>
+        <ol>
+          Skills used:
+          <li> C++</li>
+          <li> Cmake</li>
+          <li> Pytorch</li>
+        </ol>
       </aside>
     </section>
     

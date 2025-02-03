@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experimental</title>
+    <style>
+        
+    </style>
+    <script>
+        // Define the custom element class
+        class HelloWorld extends HTMLElement {
+          // This method is called when the element is added to the DOM
+          connectedCallback() {
+            console.log("Hello World!");
+          }
+        }
+        
+        // Register the custom element with the tag name <hello-world>
+        customElements.define('hello-world', HelloWorld);
+    </script>
+  </head>
+
+  <body>
+    <header>
+
+      <h1>Experimental</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="aboutme.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="experimenal.html">Experimental</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr>
+
+    <dialog open>
+        <p>WARNING: This page is experimental!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
+    <section>
+        <h2>Did <span class="name"><em>Shohei Ohtani</em></span> homer today?</h2>
+        
+        <del>Yes</del>
+        <ins><h3>No</h3></ins>
+        
+        <table>
+            <capton>His stats so far:</capton>
+            <colgroup>
+                <col />
+                <col span="2" class="Stats" />
+                <col span="1" class="Team" />
+              </colgroup>
+            <tr>
+                <th>Year</th>
+                <th>HRs</th>
+                <th>Team</th>
+            </tr>
+            <tr>
+                <td>2018</th>
+                <td>22</th>
+                <td>LAA</th>
+            </tr>
+            <tr>
+                <td>2019</th>
+                <td>18</th>
+                <td>LAA</th>
+            </tr>
+            <tr>
+                <td>2020</th>
+                <td>7</th>
+                <td>LAA</th>
+            </tr>
+            <tr>
+                <td>2021</th>
+                <td>46</th>
+                <td>LAA</th>
+            </tr>
+            <tr>
+                <td>2022</th>
+                <td>34</th>
+                <td>LAA</th>
+            </tr>
+            <tr>
+                <td>2023</th>
+                <td>44</th>
+                <td>LAA</th>
+            </tr>
+            <tr>
+                <td>2024</th>
+                <td>54</th>
+                <td>LAD</th>
+            </tr>
+            
+        </table>
+
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ItkCXW0sJjXtHEq0" title="" frameBorder="0" width="560" height="315" title="YouTube video player"></iframe></p>
+
+        <search>
+            <form action="./search/">
+                <label for="hr">Find a game with specfic amount of HRs</label><br/>
+                <input type="search" id="hr" name="q" />
+                <button type="submit">Search</button>
+              </form>
+        </search>
+
+        <audio controls src="/media/wii-sports-home-run.mp3"></audio>
+        
+    </section>
+
+
+    <hello-world></hello-world>
+
+    <pre>
+        \   ^__^
+        \  (oo)\_______
+           (__)\       )\/\
+               ||----w |
+               ||     ||
+    </pre>
+    
+    <footer>  
+      <hr>  
+      <h3>My Links:</h3>
+      <nav>
+        <ul>
+
+         <li>
+           <a href="https://www.linkedin.com/in/kazmiyata/">
+            <img src="../media/icons8-linkedin.svg" alt="Linkedin" width="40" height="40">
+           </a>
+          </li>
+          <li>
+            <a href="https://github.com/miyatakazuya">
+             <img src="../media/icons8-github.svg" alt="Github" width="40" height="40">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:kazuyamiyata18@gmail.com">
+             <img src="../media/Minduka-mail.svg" alt="Linkedin" width="40" height="40">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
