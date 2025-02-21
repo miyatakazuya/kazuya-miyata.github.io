@@ -1,0 +1,8 @@
+content-body {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+content-body > section {
+    flex-direction: column;
+}
